@@ -1,0 +1,64 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFFF;
+  color: #000;
+  font-size: 16px;
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+
+  ${mq.lowerMd} {
+    --container-gutter: 40px;
+  }
+
+  ${mq.lowerXs} {
+    --container-gutter: 20px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    --transition-fast: 0ms;
+    --transition-normal: 0ms;
+    --transition-slow: 0ms;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+p,
+h4,
+h3,
+h2,
+h1 {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+button {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  font: inherit;
+  line-height: inherit;
+  appearance: none;
+}
+
+input::-ms-clear {
+  display: none;
+}
